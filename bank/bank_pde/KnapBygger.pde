@@ -1,17 +1,17 @@
 class KnapBygger{
-float x, y, xL, yH;
+float x, y, xL, yH, t;
 String tekst;
-KnapBygger(float xpos,float ypos, float xsize, float ysize){
-  x = xpos;
-  y = ypos;
-  xL = xsize;
-  yH = ysize;
+  KnapBygger(float xpos,float ypos, float xsize, float ysize, float t_){
+    x = xpos;
+    y = ypos;
+    xL = xsize;
+    yH = ysize;
+    t = t_;
+
+  }
   
+  void display(){
 
-
-}
-void display(){
-
-}
+  }
 
 }
