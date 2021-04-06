@@ -7,7 +7,7 @@ KnapBygger(float xpos,float ypos, float xsize, float ysize){
   xL = xsize;
   yH = ysize;
   
-rect(x,y,xsize,ysize);
+
 
 }
 void display(){
