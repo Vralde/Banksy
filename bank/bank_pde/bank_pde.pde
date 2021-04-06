@@ -1,9 +1,9 @@
 
 
 
-Knap knap10 = new Knap(150, 100, 200, 150, 0);
-Knap knap100 = new Knap(400, 100, 200, 150, 0);
-Knap knap1000 = new Knap(650, 100, 200, 150, 0);
+Knap knap10 = new Knap(150, 100, 200, 150, 0,"10");
+Knap knap100 = new Knap(400, 100, 200, 150, 0,"100");
+Knap knap1000 = new Knap(650, 100, 200, 150, 0,"1000");
 
 
 void setup(){

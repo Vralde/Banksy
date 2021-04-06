@@ -1,6 +1,6 @@
 class Knap extends KnapBygger{
-  Knap(float x, float y, float xL,float yH,float t){
-  super(x,y,xL,yH,t);
+  Knap(float x, float y, float xL,float yH,float t, String tekst){
+  super(x,y,xL,yH,t,tekst);
 
   }
 
@@ -9,9 +9,12 @@ class Knap extends KnapBygger{
 
 void display(){
   
-  
-  rect(x,y,xL,yH);
 
+  rect(x,y,xL,yH);
+  fill(255);
+  textSize(30);
+  text(tekst, x+70,y+80);
+  fill(100,100,100);
   
  }
  void trykCheck(){
