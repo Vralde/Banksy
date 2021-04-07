@@ -1,10 +1,10 @@
 
 
 
-Knap knap10 = new Knap(150, 100, 200, 150, 0,"10");
-Knap knap100 = new Knap(400, 100, 200, 150, 0,"100");
-Knap knap1000 = new Knap(650, 100, 200, 150, 0,"1000");
-
+KnapTryk knap10 = new KnapTryk(150, 100, 200, 150, 0,"10");
+KnapTryk knap100 = new KnapTryk(400, 100, 200, 150, 0,"100");
+KnapTryk knap1000 = new KnapTryk(650, 100, 200, 150, 0,"1000");
+Knap overfer = new Knap(150,400,200,150,0,"Overfør");
 
 void setup(){
   
@@ -19,6 +19,7 @@ void draw(){
   knap10.display();
   knap100.display();
   knap1000.display();
+  overfer.display();
   
 
   if(mousePressed){

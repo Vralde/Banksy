@@ -13,7 +13,7 @@ void display(){
   rect(x,y,xL,yH);
   fill(255);
   textSize(30);
-  text(tekst, x+70,y+80);
+  text(tekst, x+60,y+80);
   fill(100,100,100);
   
  }
