@@ -20,9 +20,12 @@ void draw(){
   overfer.display();
   Konto.display();
 
-  if(mousePressed){
-    knap10.trykCheck();
-    knap100.trykCheck();
-    knap1000.trykCheck();
-  }
+
+  
+}
+void mouseClicked(){
+  knap10.trykCheck();
+  knap100.trykCheck();
+  knap1000.trykCheck();
+  
 }

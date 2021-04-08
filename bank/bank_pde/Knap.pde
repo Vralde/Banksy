@@ -14,12 +14,16 @@ void display(){
   fill(255);
   textSize(30);
   text(tekst, x+60,y+80);
-  fill(100,100,100);
+  if(t == 0){
+    fill(100,100,100);
+  }else{
+    fill(100, 200, 100);
+  }
   
  }
  void trykCheck(){
    println(t);
-   if(mouseX > x && mouseX < xL && mouseY > y && mouseY < yH){ 
+   if(mouseX > x && mouseX < x+xL && mouseY > y && mouseY < y+yH){ 
      if(t == 0){
        t = 1;
        println(t);
@@ -27,6 +31,5 @@ void display(){
        t = 0;
      }
    }
-
  }
 }
