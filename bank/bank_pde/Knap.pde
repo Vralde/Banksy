@@ -10,25 +10,24 @@ class Knap extends KnapBygger{
 void display(){
   
 
+  if(t == 1){
+    fill(100,200,100);
+  }
   rect(x,y,xL,yH);
   fill(255);
   textSize(30);
   text(tekst, x+60,y+80);
-  if(t == 0){
-    fill(100,100,100);
-  }else{
-    fill(100, 200, 100);
-  }
+  fill(100, 100, 100);
   
  }
  void trykCheck(){
    println(t);
    if(mouseX > x && mouseX < x+xL && mouseY > y && mouseY < y+yH){ 
-     if(t == 0){
-       t = 1;
+     if(t == 1){
+       t = 0;
        println(t);
      }else{
-       t = 0;
+       t = 1;
      }
    }
  }
