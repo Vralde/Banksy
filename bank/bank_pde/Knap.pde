@@ -13,12 +13,12 @@ void display(){
   if(t == 1){
     fill(100,200,100);
   }
-  fill(0);
+
   rect(x,y,xL,yH);
   fill(255);
   textSize(30);
   text(tekst, x+60,y+80);
-
+  fill(0);
   
  }
  void trykCheck(){

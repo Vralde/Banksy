@@ -11,7 +11,7 @@ class Kontofelt extends KnapBygger{
   void display(){
   fill(0);
   rect(x,y,xL,yH);
-  fill(255);
+
   text(int(balance),x+80,y+80);
   }
 }
