@@ -13,5 +13,13 @@ String tekst;
   void display(){
 
   }
+  
+  void trykket(){
+
+ }
+ 
+ void sluppet(){
+   
+ }
 
 }

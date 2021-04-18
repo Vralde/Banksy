@@ -2,6 +2,7 @@ class Knap extends KnapBygger{
   int value;
   Knap(float x, float y, float xL,float yH,float t, String tekst, int value_){
   super(x,y,xL,yH,t,tekst);
+  value = value_;
 
   }
 
@@ -24,22 +25,31 @@ void display(){
 
   
  }
+ 
+ 
+ 
  void trykCheck(){
    //println(t);
-   if(mouseX > x && mouseX < x+xL && mouseY > y && mouseY < y+yH){ 
-     if(t == 1){
-       t = 0;
-       //println(t);
-
-     }else{
-       t = 1;
-       println(tekst + " trykket!");
-     }
+   if(mouseX > x && mouseX < x+xL && mouseY > y && mouseY < y+yH){
+     t = 1;
+   }else if(t == 1){
+     t = 0;
    }
+
+   
  }
  
  void trykket(){
-   
+   trykCheck();
+   if (t == 1){
+     addedValue += value;
+   }else{
+     //addedValue -= value;
+   }
+
+ }
+ 
+ void sluppet(){
    
    
  }
